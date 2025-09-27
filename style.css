@@ -1,10 +1,15 @@
 /* Base resets */
 body {
+  height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #0D2F5D; /* dark blue text */
   background-color: #F5F7FA; /* light off-white background */
+}
+
+main {
+  flex: 1;               /* take up remaining space */
 }
 
 a {
@@ -101,3 +106,44 @@ footer {
   background-color: #0D2F5D;
   color: white;
 }
+
+/* Force sections to take up screen height */
+section {
+  padding: 3rem 2rem;
+}
+
+.hero {
+  min-height: 70vh; /* Full screen */
+  background-color: #E8F2FC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #1769AA;
+}
+
+.cta {
+  background-color: #2A9D8F; /* green accent */
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+}
+
+
+
